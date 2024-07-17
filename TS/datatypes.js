@@ -15,7 +15,7 @@ let table;
 table = ["sting", "string", "string"];
 let table2;
 table2 = ["string", "string"];
-let c = 2; /* Color.blue */
+let c = 2 /* Color.blue */;
 // console.log(c);
 //tuples
 //sorte de tableau qui peut contenir differents autres types de donnees
@@ -23,22 +23,21 @@ let c = 2; /* Color.blue */
 //en sortie differents types de donnees
 let nums;
 function swapNumbs(num1, num2) {
-  return [num2, num1];
+    return [num2, num1];
 }
 nums = swapNumbs(10, 20);
 // console.log(nums);
 //On peut aussi avoir un type objet
 function concatName(inf) {
-  return inf.name + inf.secondName;
+    return inf.name + inf.secondName;
 }
 // console.log(concatName({ name: "landry", secondName: "Ezeikiel" }));
-
 function pyramid(nblignes) {
-  let caractere = "#";
-  console.log(`${" ".repeat(nblignes + 10 - 1)}${caractere}\n`);
-  for (let i = 2; i < nblignes; i++) {
-    let str = caractere.repeat(i);
-    console.log(`${" ".repeat(nblignes + 10 - i)}${str}${str}\n`);
-  }
+    let caractere = "#";
+    console.log(`${" ".repeat(nblignes + 10 - 1)}${caractere}\n`);
+    for (let i = 2; i < nblignes; i++) {
+        let str = caractere.repeat(i);
+        console.log(`${" ".repeat(nblignes + 10 - i)}${str}${str}\n`);
+    }
 }
 pyramid(30);
