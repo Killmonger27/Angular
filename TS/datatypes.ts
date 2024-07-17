@@ -1,7 +1,7 @@
 //Pour les types elementaires, TS a cette capacite de determiner le type de la variable
 let varname: string;
 varname = "Landry";
-console.log(varname);
+// console.log(varname);
 
 //any fait reference au any qu'on rencontre en JS , donc peut changer de type
 
@@ -10,7 +10,7 @@ department = 10;
 department = "10";
 department = [10, "10"];
 
-console.log(department);
+// console.log(department);
 
 //Declaration des tableau: On precise le type de donnees qu'on veut mettre et dans le tableau
 //et et ne peut rien mettre d'autre
@@ -32,7 +32,7 @@ const enum Color {
 
 let c: Color = Color.blue;
 
-console.log(c);
+// console.log(c);
 
 //tuples
 //sorte de tableau qui peut contenir differents autres types de donnees
@@ -47,4 +47,24 @@ function swapNumbs(num1: number, num2: number): [number, number] {
 
 nums = swapNumbs(10, 20);
 
-console.log(nums);
+// console.log(nums);
+
+//On peut aussi avoir un type objet
+
+function concatName(inf: { name: string; secondName: string }) {
+  return inf.name + inf.secondName;
+}
+
+// console.log(concatName({ name: "landry", secondName: "Ezeikiel" }));
+
+function pyramid(nblignes: number) {
+  let caractere = "#";
+  console.log(`${" ".repeat(nblignes + 10 - 1)}${caractere}\n`);
+
+  for (let i = 2; i < nblignes; i++) {
+    let str = caractere.repeat(i);
+    console.log(`${" ".repeat(nblignes + 10 - i)}${str}${str}\n`);
+  }
+}
+
+pyramid(30);
