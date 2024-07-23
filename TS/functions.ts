@@ -30,3 +30,4 @@ function firstOf<Type>(arr: Array<Type>): Type {
 }
 
 let first = firstOf(["10", "20"]); //first est du type string dans cet exemple
+//
