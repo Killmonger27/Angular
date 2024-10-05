@@ -68,3 +68,6 @@ function pyramid(nblignes: number) {
 }
 
 pyramid(30);
+
+let number: number;
+number =23.4

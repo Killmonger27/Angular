@@ -41,3 +41,5 @@ function pyramid(nblignes) {
     }
 }
 pyramid(30);
+let number;
+number = 23.4;
